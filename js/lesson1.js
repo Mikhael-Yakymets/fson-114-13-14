@@ -31,3 +31,55 @@
 // number >= 55 && number <= 99
 //   ? console.log('Число потрапляє в діапазон')
 //   : console.log('Число не потрапляє в діапазон');
+
+
+//TODO: 3 ===================================
+// Є 3 вікові групи : діти (0-16), дорослі(17-60), пенсіонери (61-100).
+// До якої групи відноситься Максим, якщо йому 55 років.Назву групи вивести на екран.
+
+// const ageMaksim = 101;
+
+// if (ageMaksim >= 0 && ageMaksim <= 16) {
+//     console.log("Maksim is children");
+    
+// } else if (ageMaksim >= 17 && ageMaksim <= 60) {
+//     console.log("Maksim is adult");
+    
+// } else if (ageMaksim >= 61 && ageMaksim <= 100) {
+//     console.log("Maksim is pensioner");
+// } else {
+//     console.log("Maksim is pensioner+");
+    
+// }
+
+//TODO: 4 
+// ===================================
+//* Конструкція switch
+// Запитай користувача у модальному вікні, який з напоїв він бажає придбати - "Кава", "Чай" чи "Сік",
+// та залежно від виду напою оголоси суму досплати.Використовувати switch.
+
+
+// const drink = prompt("Enter your drink:")
+
+// function orderDrink(drink) {
+//     let price = 0;
+
+//     switch (drink.toLowerCase()) {
+//         case "coffe":
+//             price = 60;
+//             break;
+//         case "tea":
+//             price = 40;
+//             break;
+//         case "juice":
+//             price = 50;
+//             break;
+//         default:
+//             alert("Error");
+//     }
+
+//     return alert(`Your total price is ${price} Uah`);
+// }
+
+// orderDrink(drink);
+
