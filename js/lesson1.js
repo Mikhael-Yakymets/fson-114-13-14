@@ -32,7 +32,6 @@
 //   ? console.log('Число потрапляє в діапазон')
 //   : console.log('Число не потрапляє в діапазон');
 
-
 //TODO: 3 ===================================
 // Є 3 вікові групи : діти (0-16), дорослі(17-60), пенсіонери (61-100).
 // До якої групи відноситься Максим, якщо йому 55 років.Назву групи вивести на екран.
@@ -41,23 +40,22 @@
 
 // if (ageMaksim >= 0 && ageMaksim <= 16) {
 //     console.log("Maksim is children");
-    
+
 // } else if (ageMaksim >= 17 && ageMaksim <= 60) {
 //     console.log("Maksim is adult");
-    
+
 // } else if (ageMaksim >= 61 && ageMaksim <= 100) {
 //     console.log("Maksim is pensioner");
 // } else {
 //     console.log("Maksim is pensioner+");
-    
+
 // }
 
-//TODO: 4 
+//TODO: 4
 // ===================================
 //* Конструкція switch
 // Запитай користувача у модальному вікні, який з напоїв він бажає придбати - "Кава", "Чай" чи "Сік",
 // та залежно від виду напою оголоси суму досплати.Використовувати switch.
-
 
 // const drink = prompt("Enter your drink:")
 
@@ -92,8 +90,8 @@
 // const max = 100;
 // let total = 0;
 
-// for (let i = max; i >= min; i--) { 
-//     if (i % 2 !== 0) { 
+// for (let i = max; i >= min; i--) {
+//     if (i % 2 !== 0) {
 //         continue;
 //     }
 //     console.log(i);
@@ -110,9 +108,27 @@
 // ****
 // *****
 
-let star = '*';
+// let star = '*';
 
-for (let i = 1; i <= 7; i++) {
-   console.log(star);
-   star += '*';
-}
+// for (let i = 1; i <= 7; i++) {
+//    console.log(star);
+//    star += '*';
+// }
+
+//TODO: 11 ===================================
+//Якщо число ділитися на 3 повертати
+//fizz якщо ділитися на 5 повертати buzz
+//Якщо ділитися на 3 і на 5 повернути fizzbuzz
+
+// const number = 30;
+// for (let i = 1; i <= number; i += 1) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log('fizzbuzz');
+//   } else if (i % 3 === 0) {
+//     console.log('fizz');
+//   } else if (i % 5 === 0) {
+//     console.log('buzz');
+//   } else {
+//     console.log(i);
+//   }
+// }
