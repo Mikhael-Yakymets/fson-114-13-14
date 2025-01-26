@@ -101,7 +101,6 @@
 // console.log(calculator.sum());
 // console.log(calculator.multiply());
 
-
 /**
  *? Напишіть функцію updateObject, яка приймає об'єкт робить копію та повертає
  *? новий об'єкт без вказаного параметра
@@ -110,7 +109,7 @@
 
 //  const obj = { a: 1, b: 2, c: 3 };
 
-//  function updateObject(object, letter) { 
+//  function updateObject(object, letter) {
 //   const newObj = {...object}
 //   delete newObj[letter];
 //   return newObj;
@@ -119,3 +118,28 @@
 // console.log(updateObject(obj, 'a'));
 // console.log(obj);
 
+// // *? Зробіть знижку 20% на всі фрукти у масиві
+// // *? Надайте ід для кожного продукту
+
+// const fruits = [
+//   { name: 'apple', price: 200 },
+//   { name: 'orange', price: 300 },
+//   { name: 'grapes', price: 750 },
+// ];
+
+// function discountFructis(fruitsArr) {
+//   const newFruits = [];
+//   // for (const fruit of fruitsArr) {
+//   //   const copyFruit = { ...fruit };
+//   //   copyFruit.id = 'id_' + Date.now() + Math.random().toString(36).substr(2, 9);
+//   //   copyFruit.price = copyFruit.price * 0.8;
+//   //   newFruits.push(copyFruit);
+//   // }
+//   for (const fruit of fruitsArr) {
+//     const id = 'id_' + Date.now() + Math.random().toString(36).substr(2, 9);
+//     newFruits.push({ ...fruit, price: fruit.price * 0.8, id });
+//   }
+//   return newFruits;
+// }
+// console.log(discountFructis(fruits));
+// console.log(fruits);
