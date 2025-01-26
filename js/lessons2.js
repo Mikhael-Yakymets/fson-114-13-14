@@ -83,20 +83,39 @@
 // sum() повертає суму збережених значень
 // multiply() перемножує збережені значення та повертає результат
 
-const calculator = {
-  read(a, b) {
-    this.val1 = a;
-    this.val2 = b;
-  },
-  sum() {
-    return this.val1 + this.val2;
-  },
-  multiply() {
-    return this.val1 * this.val2;
-  },
-};
+// const calculator = {
+//   read(a, b) {
+//     this.val1 = a;
+//     this.val2 = b;
+//   },
+//   sum() {
+//     return this.val1 + this.val2;
+//   },
+//   multiply() {
+//     return this.val1 * this.val2;
+//   },
+// };
 
-calculator.read(12, 22);
-console.log(calculator);
-console.log(calculator.sum());
-console.log(calculator.multiply());
+// calculator.read(12, 22);
+// console.log(calculator);
+// console.log(calculator.sum());
+// console.log(calculator.multiply());
+
+
+/**
+ *? Напишіть функцію updateObject, яка приймає об'єкт робить копію та повертає
+ *? новий об'єкт без вказаного параметра
+ *? Очікуваний результат updateObject({a: 1, b: 2, c: 3}, 'b') {a: 1, c: 3}
+ */
+
+//  const obj = { a: 1, b: 2, c: 3 };
+
+//  function updateObject(object, letter) { 
+//   const newObj = {...object}
+//   delete newObj[letter];
+//   return newObj;
+// }
+
+// console.log(updateObject(obj, 'a'));
+// console.log(obj);
+
