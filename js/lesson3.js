@@ -104,3 +104,52 @@
 //   { name: 'Bob', age: 19 },
 // ];
 // console.log(user.map(item => item.name).toSorted((a,b) => a.localeCompare(b)).find(elem => elem === 'John'));
+
+
+//TODO:=========task-01=================
+/**
+ * Створи клас для калькулятора, який має такі методи:
+ * - метод number, який набуває початкового значення для наступних операцій
+ * - метод getResult, який повертає фінальний результат усіх операцій, проведених із числом
+ * - методи add, substruct, divide, multiply
+ * Об'єкт класу може проводити послідовні операції у вигляді ланцюжка
+ */
+
+
+class Calculator {
+    results = 0;
+    number(num) {
+        this.results = num;
+        return this;
+    }
+    getResult() {
+        return this.results
+    }
+    substruct(num) {
+        this.results -= num;
+        return this;
+    }
+    divide(num) {
+        this.results /= num;
+        return this;
+    }
+    add(num) {
+        this.results += num;
+        return this;
+    }
+    multiply(num) {
+        this.results *= num;
+        return this;
+    }
+
+    
+}
+
+// const calculator = new Calculator();
+// const res = calculator.number(10).multiply(2).substruct(7).getResult();
+// console.log(res);
+
+// const calculator1 = new Calculator();
+// const res1 = calculator.number(1).multiply(10).substruct(7).getResult();
+// console.log(res1);
+
