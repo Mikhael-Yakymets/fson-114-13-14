@@ -116,34 +116,34 @@
  */
 
 
-class Calculator {
-    results = 0;
-    number(num) {
-        this.results = num;
-        return this;
-    }
-    getResult() {
-        return this.results
-    }
-    substruct(num) {
-        this.results -= num;
-        return this;
-    }
-    divide(num) {
-        this.results /= num;
-        return this;
-    }
-    add(num) {
-        this.results += num;
-        return this;
-    }
-    multiply(num) {
-        this.results *= num;
-        return this;
-    }
+// class Calculator {
+//     results = 0;
+//     number(num) {
+//         this.results = num;
+//         return this;
+//     }
+//     getResult() {
+//         return this.results
+//     }
+//     substruct(num) {
+//         this.results -= num;
+//         return this;
+//     }
+//     divide(num) {
+//         this.results /= num;
+//         return this;
+//     }
+//     add(num) {
+//         this.results += num;
+//         return this;
+//     }
+//     multiply(num) {
+//         this.results *= num;
+//         return this;
+//     }
 
     
-}
+// }
 
 // const calculator = new Calculator();
 // const res = calculator.number(10).multiply(2).substruct(7).getResult();
@@ -153,3 +153,75 @@ class Calculator {
 // const res1 = calculator.number(1).multiply(10).substruct(7).getResult();
 // console.log(res1);
 
+//TODO:=========task-02=================
+/**
+ * Напиши клас Client який створює об'єкт з ​​властивостями login email.
+ *
+ * Оголоси приватні властивості #login #email, доступ до яких зроби через геттер та сеттер login email
+ */
+
+// class Client { 
+//     #login;
+//     #email;
+
+//     constructor(login, email) {
+//         this.#login = login;
+//         this.#email = email;
+//     }
+//     get getLogin() {
+//         return this.#login;
+//     }
+
+//     set changeLogin(newLogin) { 
+//         this.#login = newLogin
+//     }
+
+//     get getEmail() {
+//         return this.#email;
+//     }
+
+//     set changeemail(newEmail) { 
+//         this.#email = newEmail
+//     }
+// }
+
+// const client = new Client('Mango', 'qwery@gmail.com');
+// console.log(client.getLogin);
+// client.changeLogin = 'Alex';
+// console.log(client.getLogin);
+
+// class Human { 
+//     constructor(name, surname, age, hobby) { 
+//         this.name = name;
+//         this.surname = surname;
+//         this.age = age;
+//         this.hobby = hobby;
+//     } 
+//     getInfo() { 
+//         return {name: this.name,
+//             surname: this.surname,
+//             age: this.age,
+//             hobby: this.hobby,
+//         }
+//     }
+
+// }
+
+// class Emploee extends Human { 
+//     constructor(department, salery, name, surname, age) { 
+//         super(name, surname, age);
+//         this.department = department;
+//         this.salery = salery;
+//     }
+//     getEmploeeInfo() { 
+//         return { 
+//         ...this.getInfo(),
+//         salery: this.salery,
+//         department: this.department
+//         }
+//     }
+// }
+
+// const emploee = new Emploee('IT', 5000, 'Kolya', 'Vladov', 29)
+// const human = new Human('Kolya', 'Vladov', 29, 'hobbyhorsing');
+// console.log(emploee.getEmploeeInfo());
