@@ -107,3 +107,26 @@ watchedFilms.forEach(id => {
     film.style.opacity = 0.5;
   }
 });
+
+// const btnEl = document.querySelector(".open-modal")
+
+// btnEl.addEventListener("click", () => {
+//   const instance = basicLightbox.create(`
+//     <img src="https://static.hdrezka.ac/i/2022/12/25/z330b47a82209ww99w55a.jpg" width="800" height="600">
+//   `)
+
+//   instance.show()
+// })
+
+// filmsListEl.addEventListener("click", (event) => {
+//   if (event.target.nodeName !== "IMG") {
+//     return;
+//   }
+
+//   const modal = basicLightbox.create(`
+//     <img src="${event.target.src}" width="800" height="600">
+//   `)
+
+//   modal.show()
+// })
+
