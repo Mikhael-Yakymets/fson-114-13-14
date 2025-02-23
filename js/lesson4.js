@@ -108,25 +108,41 @@ watchedFilms.forEach(id => {
   }
 });
 
-// const btnEl = document.querySelector(".open-modal")
+const btnEl = document.querySelector(".open-modal")
 
-// btnEl.addEventListener("click", () => {
-//   const instance = basicLightbox.create(`
-//     <img src="https://static.hdrezka.ac/i/2022/12/25/z330b47a82209ww99w55a.jpg" width="800" height="600">
-//   `)
+btnEl.addEventListener("click", () => {
+  const instance = basicLightbox.create(`
+    <img src="https://static.hdrezka.ac/i/2022/12/25/z330b47a82209ww99w55a.jpg" width="800" height="600">
+  `)
 
-//   instance.show()
-// })
+  instance.show()
+})
 
-// filmsListEl.addEventListener("click", (event) => {
-//   if (event.target.nodeName !== "IMG") {
-//     return;
-//   }
+filmsListEl.addEventListener("click", (event) => {
+  if (event.target.nodeName !== "IMG") {
+    return;
+  }
 
-//   const modal = basicLightbox.create(`
-//     <img src="${event.target.src}" width="800" height="600">
-//   `)
+  const modal = basicLightbox.create(`
+    <img src="${event.target.src}" width="800" height="600">
+  `, {
+    onShow: () => {
+      document.addEventListener('keydown', onEscClick )
+    }, 
+    onClose: () => {
+      document.removeEventListener('keydown', onEscClick )
+    }
+  })
 
-//   modal.show()
-// })
+  modal.show()
+  function onEscClick(event) { 
+    console.log(event.code);
+    if (event.code === 'Escape') { 
+      modal.close()
+      console.log('object is closet');
+
+    }
+  }
+})
+
 
